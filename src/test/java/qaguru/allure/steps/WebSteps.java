@@ -11,7 +11,7 @@ import static org.openqa.selenium.By.linkText;
 public class WebSteps {
 
     private final SelenideElement searchInput = $(".header-search-input");
-    private final SelenideElement repoList = $(".repo-list-item");
+    private final SelenideElement repoLink = $(".repo-list-item");
     private final SelenideElement issueTab = $("[data-content=Issues]");
     private final ElementsCollection issueList = $$("div[aria-label=Issues]");
 
@@ -29,7 +29,7 @@ public class WebSteps {
 
     @Step("Go to repository {repository}")
     public void goToRepository(String repository) {
-        repoList.find(linkText(repository)).click();
+        repoLink.find(linkText(repository)).click();
     }
 
     @Step("Open issue tab")
