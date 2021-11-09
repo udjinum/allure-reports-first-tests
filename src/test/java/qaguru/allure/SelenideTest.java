@@ -32,7 +32,7 @@ public class SelenideTest extends TestBase {
 
         $(linkText("TheAlgorithms/Java")).click();
         $(partialLinkText("Issues")).click();
-        $(withText("2814")).should(visible);
+        $(withText("#2814")).should(visible);
     }
 
     @Test

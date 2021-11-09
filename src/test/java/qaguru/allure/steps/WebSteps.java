@@ -12,7 +12,7 @@ public class WebSteps {
 
     private final SelenideElement searchInput = $(".header-search-input");
     private final SelenideElement repoList = $(".repo-list-item");
-    private final SelenideElement issueTab = $("[data-content=Issues]");//"div[aria-label=Issues]"
+    private final SelenideElement issueTab = $("[data-content=Issues]");
     private final ElementsCollection issueList = $$("div[aria-label=Issues]");
 
     @Step("Open main page")
